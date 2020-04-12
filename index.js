@@ -55,9 +55,7 @@ function getYourPet(pet, zip, miles) {
     .then(response => {
         if (response.ok) {
             return response.json()
-         } //else {
-        //     return Promise.reject(response)
-        // }
+         } 
         throw new Error (response.statusText);
     })
     .then(responseJson => displayResults(responseJson))
@@ -68,10 +66,6 @@ function getYourPet(pet, zip, miles) {
 
     console.log(apiUrl);
 };
-
-// function getYourPetID() {
-
-// }
 
 function formSubmit() {
     $('form').submit(event => {
