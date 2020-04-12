@@ -1,7 +1,14 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: 'Helvetica Neue';
+}
+
+.banner {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSU0V8cr3WD-0KFwDtMfz0oZT9WSnOb_JTXvVeQDIv3mpasm7Zf&usqp=CAU');
+    width: auto;
+    height: 200px;
 }
 
 header {
@@ -10,14 +17,23 @@ header {
     font-size: 60px;
 }
 
-.why-adopt, .search-form, .results, .js-error-message {
+.why-adopt, .search-form, .results, .js-error-message, .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 15px;
 }
 
-.why-adopt, .search-form, .results {
-    padding-top: 50px;
+.headline, .headlinepara {
+    text-align: center;
+    font-style: italic;
+}
+
+.js-error-message {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 
 form {
@@ -33,6 +49,9 @@ fieldset {
 
 legend {
     font-size: 25px;
+    font-weight: bolder;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 label {
@@ -50,9 +69,10 @@ label:after {
 }
 
 input {
-    width: 75%;
+    width: 100%;
     padding: 10px;
     font-size: 16px;
+    text-align: center;
 }
 
 .submit-img {
@@ -71,8 +91,14 @@ button {
     padding: 15px;
 }
 
+ul {
+    text-align: center;
+}
+
 li {
     list-style: none;
+    font-weight: 200;
+    font-size: 18px;
 }
 
 img {
@@ -80,12 +106,82 @@ img {
     height: auto;
 }
 
-footer {
-    padding-top: 100px;
-    text-align: center;
+a:hover {
+    font-size: 22px;
+    cursor: pointer;
+    color: rgb(128, 0, 75);
 }
 
-footer:after {
-    content: "\a";
-    white-space: pre;
+.contact {
+    padding-bottom: 100px;
+}
+
+
+/* media query for screen at min width 320px */
+@media screen and (min-width: 320px) {
+    
+    header {
+        font-size: 55px;
+        padding-bottom: 80px;
+    }
+
+    .contact {
+        text-align: center;
+    }
+    
+    .headline, .headlinepara {
+        width: 85%;
+        font-style: italic;
+    }
+
+    .headline {
+        font-size: 30px;
+    }
+
+    .headlinepara {
+        font-size: 20px;
+    }
+
+    ul {
+        padding-left: 10px;
+    }
+
+    img {
+        width: 200px;
+        height: auto;
+    }
+}
+
+
+/* media query for screen at min width 550px */
+@media screen and (min-width: 550px) {
+    
+    img {
+        width: 350px;
+        height: auto;
+    }
+
+}
+
+
+/* media query for screen at min width 820px */
+@media screen and (min-width: 820px) {
+    
+    header {
+        font-size: 75px;
+    }
+
+    .headline {
+        font-size: 35px;
+    }
+
+    .headlinepara {
+        font-size: 25px;
+    }
+
+    img {
+        width: 450px;
+        height: auto;
+    }
+
 }
