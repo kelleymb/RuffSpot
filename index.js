@@ -11,17 +11,17 @@ function displayResults(responseJson) {
         listItems.push(`
         <ul>
         <li><a href="${responseJson[i].ProfileUrl}" target="_blank"><h3>Hello, my name is ${responseJson[i].Name}</h3></a></li>
-        <li><img src="${responseJson[i].PrimaryPhotoUrl}"></li>
-        <li><em>Adoption Deadline:</em> ${responseJson[i].AdoptionDeadline}</li>
-        <li><em>Breed:</em> ${responseJson[i].BreedsForDisplay}</li>
-        <li><em>Gender:</em> ${responseJson[i].Gender}</li>
-        <li><em>Spayed/Neutered:</em> ${responseJson[i].SpayedNeutered}</li>
-        <li><em>Size:</em> ${responseJson[i].Size}</li>
-        <li><em>I am ${responseJson[i].AgeYears} years and ${responseJson[i].AgeMonths} months</em></li>
-        <li><em>My activity level is ${responseJson[i].ActivityLevel}</li>
-        <li><em>I get along great with ${responseJson[i].GoodWith}</li>
-        <li><em>Location:</em> ${responseJson[i].City}, ${responseJson[i].State}, ${responseJson[i].ZipCode}</li>
-        <br></ul>`);
+        <li><img src="${responseJson[i].PrimaryPhotoUrl}" alt="photoofadoptablepet"></li>
+        <li>Adoption Deadline: ${responseJson[i].AdoptionDeadline}</li>
+        <li>Breed: ${responseJson[i].BreedsForDisplay}</li>
+        <li>Gender: ${responseJson[i].Gender}</li>
+        <li>Spayed/Neutered: ${responseJson[i].SpayedNeutered}</li>
+        <li>Size: ${responseJson[i].Size}</li>
+        <li>I am ${responseJson[i].AgeYears} years and ${responseJson[i].AgeMonths} months</li>
+        <li>My activity level is ${responseJson[i].ActivityLevel}</li>
+        <li>I get along great with ${responseJson[i].GoodWith}</li>
+        <li>Location: ${responseJson[i].City}, ${responseJson[i].State}, ${responseJson[i].ZipCode}</li>
+        </ul>`);
     }
     $('.results').append(listItems);
 }
