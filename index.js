@@ -1,7 +1,7 @@
 'use strict'
 
 function displayResults(responseJson) {
-    $('.results').empty()
+    $('.results').empty();
     if (responseJson.length === 0 ) {
         $('.js-error-message').append('No results found. Try expanding your miles radius!');
         return;
