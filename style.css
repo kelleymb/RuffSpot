@@ -13,10 +13,20 @@
 header {
     text-align: center;
     padding: 45px;
-    font-size: 60px;
+    color: black;
 }
 
-.why-adopt, .search-form, .results, .js-error-message, .contact {
+h1 {
+    font-size: 60px;
+    padding: 35px;
+}
+
+h2 {
+    font-size: 22px;
+    text-align: center;
+}
+
+.why-adopt, .search-form, .results, .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,6 +43,7 @@ header {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+    padding: 5px;
 }
 
 form {
@@ -47,10 +58,11 @@ fieldset {
 }
 
 legend {
-    font-size: 25px;
-    font-weight: bolder;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: light;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    font-style: italic;
 }
 
 label {
@@ -79,19 +91,15 @@ input {
     width: 35px;
 }
 
-button:before {
-    content: "\a";
-    white-space: pre;
-}
-
 button {
-    border: none;
     cursor: pointer;
-    padding: 15px;
+    padding: 5px;
+    margin: 0;
 }
 
 ul {
     text-align: center;
+    padding-left: 10px;
 }
 
 li {
@@ -100,8 +108,12 @@ li {
     font-size: 18px;
 }
 
+.results {
+    padding-bottom: 60px;
+}
+
 img {
-    width: 350px;
+    width: 250px;
     height: auto;
 }
 
@@ -113,42 +125,7 @@ a:hover {
 
 .contact {
     padding-bottom: 100px;
-}
-
-
-/* media query for screen at min width 320px */
-@media screen and (min-width: 320px) {
-    
-    header {
-        font-size: 55px;
-        padding-bottom: 80px;
-    }
-
-    .contact {
-        text-align: center;
-    }
-    
-    .headline, .headlinepara {
-        width: 85%;
-        font-style: italic;
-    }
-
-    .headline {
-        font-size: 30px;
-    }
-
-    .headlinepara {
-        font-size: 20px;
-    }
-
-    ul {
-        padding-left: 10px;
-    }
-
-    img {
-        width: 200px;
-        height: auto;
-    }
+    text-align: center;
 }
 
 
@@ -166,20 +143,21 @@ a:hover {
 /* media query for screen at min width 820px */
 @media screen and (min-width: 820px) {
     
-    header {
-        font-size: 75px;
+    h1 {
+        font-size: 85px;
+        padding-bottom: 80px;
     }
 
-    .headline {
-        font-size: 35px;
+    .headline  {
+        font-size: 25px
     }
 
     .headlinepara {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     img {
-        width: 450px;
+        width: 500px;
         height: auto;
     }
 

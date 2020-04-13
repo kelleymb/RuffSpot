@@ -1,8 +1,7 @@
 'use strict'
 
 function displayResults(responseJson) {
-    console.log(responseJson);
-    $('.results').empty();
+    $('.results').empty()
     if (responseJson.length === 0 ) {
         $('.js-error-message').append('No results found. Try expanding your miles radius!');
         return;
@@ -59,24 +58,15 @@ function getYourPet(pet, zip, miles) {
         throw new Error (response.statusText);
     })
     .then(responseJson => displayResults(responseJson))
-    .catch(error => {
-        console.log('error', error);
-        $('.js-error-message').text(`Oops! Something went wrong: ${error.message}`)
-    });
-
-    console.log(apiUrl);
+    .catch(error => $('.js-error-message').text(`Something went wrong...${error.message}! Please search by Cat or Dog.`));
 };
 
 function formSubmit() {
     $('form').submit(event => {
         event.preventDefault();
-        console.log('Submit action is working.');
         const bypet = $('#bypet').val();
         const zipcode = $('#zipcode').val();
         const miles = $('#miles').val();
-        console.log(bypet);
-        console.log(zipcode);
-        console.log(miles);
         getYourPet(bypet, zipcode, miles);
     });
 }
