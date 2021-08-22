@@ -2,6 +2,7 @@
 
 function displayResults(responseJson) {
     $('.results').empty();
+    $('h3').toggle();
     if (responseJson.length === 0 ) {
         $('.js-error-message').append('No results found. Try expanding your miles radius!');
         return;
@@ -36,7 +37,9 @@ function getYourPet(pet, zip, miles) {
     }
 
     const apikey = 'E6A0D4A3-086C-4D68-A16A-FD7F2D5D0DC3';
-    const apiUrl = 'https://cors-anywhere.herokuapp.com/https://getyourpet.com/api/partnerpetsearch';
+    /*const apiUrl = 'https://cors-anywhere.herokuapp.com/https://getyourpet.com/api/partnerpetsearch';*/
+    const apiUrl = 'https://corsanywhere.herokuapp.com/https://getyourpet.com/api/partnerpetsearch';
+    
 
 
     let h = new Headers();
@@ -51,9 +54,11 @@ function getYourPet(pet, zip, miles) {
     });
 
     fetch(req)
+    .then(console.log(req))
     .then(response => {
         if (response.ok) {
-            return response.json()
+            console.log(response.json);
+            return response.json();
          } 
         throw new Error (response.statusText);
     })

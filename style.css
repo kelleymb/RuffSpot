@@ -5,7 +5,7 @@
 }
 
 .banner {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSU0V8cr3WD-0KFwDtMfz0oZT9WSnOb_JTXvVeQDIv3mpasm7Zf&usqp=CAU');
+    background-image: url('https://media.istockphoto.com/videos/pets-pattern-scrolling-background-with-colored-paws-video-id1128149782?s=640x640');
     width: auto;
     height: 200px;
 }
@@ -25,6 +25,10 @@ h2 {
     font-size: 22px;
     text-align: center;
 }
+
+/* h3 {
+    display: none;
+} */
 
 .why-adopt, .search-form, .results, .contact {
     display: flex;
@@ -87,14 +91,18 @@ input {
 }
 
 .submit-img {
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
 }
 
 button {
     cursor: pointer;
     padding: 5px;
     margin: 0;
+    border-bottom-color: white;
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: white;
 }
 
 ul {
