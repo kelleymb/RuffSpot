@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Helvetica Neue';
+    font-family: 'Geneva';
 }
 
 .banner {
@@ -110,12 +110,17 @@ button {
     border-right-color: white;
 }
 
+ul > li > a > h3 {
+    padding: 20px;
+}
+
 ul {
     text-align: center;
     padding-left: 10px;
     padding-bottom: 45px;
     background: lightgray; 
     width: 100%;
+
 }
 
 ul:nth-child(odd) { 
@@ -132,9 +137,11 @@ li {
     padding-bottom: 60px;
 }
 
-img {
+li img {
     width: 300px;
     height: auto;
+    border-radius: 50%;
+    padding: 15px;
 }
 
 a:hover {
