@@ -31,9 +31,9 @@ h2 {
     padding-bottom:15px;
 }
 
-body {
+/* body {
     background-color: lightgrey;
-}
+} */
 
 .why-adopt, .search-form, .results, .contact {
     display: flex;
@@ -119,7 +119,7 @@ ul {
     padding-left: 10px;
     padding-bottom: 45px;
     background: lightgray; 
-    width: 100%;
+    width: 80%;
 
 }
 
@@ -159,8 +159,8 @@ a:hover {
 /* media query for screen at min width 550px */
 @media screen and (min-width: 550px) {
     
-    img {
-        width: 350px;
+    li img {
+        width: 250px;
         height: auto;
     }
 
@@ -183,7 +183,7 @@ a:hover {
         font-size: 20px;
     }
 
-    img {
+    li img {
         width: 500px;
         height: auto;
     }
