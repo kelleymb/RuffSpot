@@ -26,9 +26,10 @@ h2 {
     text-align: center;
 }
 
-/* h3 {
-    display: none;
-} */
+.results-hdr {
+    text-align: center;
+    padding:15px;
+}
 
 .why-adopt, .search-form, .results, .contact {
     display: flex;
@@ -108,7 +109,13 @@ button {
 ul {
     text-align: center;
     padding-left: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 45px;
+    background: lightgray; 
+    width: 100%;
+}
+
+ul:nth-child(odd) { 
+    background: lightslategray;
 }
 
 li {
@@ -122,7 +129,7 @@ li {
 }
 
 img {
-    width: 250px;
+    width: 300px;
     height: auto;
 }
 

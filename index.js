@@ -2,7 +2,6 @@
 
 function displayResults(responseJson) {
     $('.results').empty();
-    $('h3').toggle();
     if (responseJson.length === 0 ) {
         $('.js-error-message').append('No results found. Try expanding your miles radius!');
         return;
@@ -24,6 +23,7 @@ function displayResults(responseJson) {
         <li>Location: ${responseJson[i].City}, ${responseJson[i].State}, ${responseJson[i].ZipCode}</li>
         </ul>`);
     }
+    $('<h3 class="results-hdr">Let me introduce you to...</h3>').insertBefore('.results');
     $('.results').append(listItems);
 }
 
