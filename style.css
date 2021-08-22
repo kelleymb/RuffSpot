@@ -27,8 +27,12 @@ h2 {
 }
 
 .results-hdr {
-    text-align: center;
-    padding:15px;
+    padding-left: 85px;
+    padding-bottom:15px;
+}
+
+body {
+    background-color: lightgrey;
 }
 
 .why-adopt, .search-form, .results, .contact {
